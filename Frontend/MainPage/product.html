@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train to Win - Personalized Fitness Plan</title>
+    <link rel="stylesheet" href="prodS.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Train to Win</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">Home</a></li>
+                    <li><a href="das.html">Dashboard</a></li>
+                    <li><a href="../Sign-INUP/index.html">Login</a></li>
+                    <li><a href="../Sign-INUP/index2.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="fitness-plan">
+            <h2>Personalized Fitness Plan Generator</h2>
+            <p>Answer a few questions to get a tailored workout and diet plan.</p>
+            <form id="fitness-form">
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Height (in cm)</label>
+                    <input type="number" id="height" required placeholder="e.g., 170" />
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight (in kg)</label>
+                    <input type="number" id="weight" required placeholder="e.g., 70" />
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Experience Level</label>
+                    <select id="experience" required>
+                        <option value="" disabled selected>Select Experience Level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="workout-time">Preferred Workout Time (in minutes)</label>
+                    <input type="number" id="workout-time" required placeholder="e.g., 30" />
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" id="generate-plan">Generate Plan</button>
+                    <button type="button" id="reset-form" class="secondary-btn">Reset Form</button>
+                </div>
+            </form>
+
+            <section id="result-section" style="display: none;">
+                <div id="result"></div>
+                <div class="result-buttons">
+                    <button id="save-plan" class="secondary-btn">Save Plan</button>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Train to Win. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="prod.js"></script>
+</body>
+</html>

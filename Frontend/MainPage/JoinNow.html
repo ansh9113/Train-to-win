@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Now - Train to Win</title>
+    <link rel="stylesheet" href="jn.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Train to Win</h1>
+            </div>
+            <nav>
+                <ul>
+                    li><a href="../MainPage/mainpage.html">Home</a></li>
+                    <li><a href="../MainPage/das.html">Dashboard</a></li>
+                    <li><a href="../Sign-INUP/index.html">Login</a></li>
+                    <li><a href="../Sign-INUP/index2.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="signup-container">
+            <h2>Join Now</h2>
+            <form id="signupForm" onsubmit="return validateSignupForm(event)">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p class="error-message" id="errorMessage"></p>
+                <p>Already have an account? <a href="index.html">Login here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Train to Win. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

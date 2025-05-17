@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ZenFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ZenFlow</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="index2.html">Sign Up</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="dashboard">
+            <h2>Welcome to Your Dashboard</h2>
+            <div class="dashboard-grid">
+                <!-- Profile Summary -->
+                <div class="dashboard-card">
+                    <h3>Profile Summary</h3>
+                    <p><strong>Username:</strong> <span id="username">User</span></p>
+                    <p><strong>Email:</strong> <span id="email">user@example.com</span></p>
+                    <p><strong>Joined:</strong> <span id="joinDate">April 02, 2025</span></p>
+                    <p><strong>Last Login:</strong> <span id="lastLogin">Not available</span></p>
+                    <p><strong>Status:</strong> <span id="loginStatus" class="status-indicator">Not logged in</span></p>
+                </div>
+
+                <!-- Saved Yoga & Meditation Plan -->
+                <div class="dashboard-card">
+                    <h3>Your Saved Yoga & Meditation Plan</h3>
+                    <div id="saved-plan">
+                        <p>No saved plan found. Generate a new plan <a href="yoga-plan.html">here</a>.</p>
+                    </div>
+                </div>
+
+                <!-- Progress Tracking -->
+                <div class="dashboard-card">
+                    <h3>Progress Tracking</h3>
+                    <div class="progress-item">
+                        <p><strong>Sessions Completed:</strong> <span id="sessions-completed">0</span></p>
+                        <button class="secondary-btn" onclick="updateProgress('sessions')">Log Session</button>
+                    </div>
+                    <div class="progress-item">
+                        <p><strong>Days Practiced:</strong> <span id="days-practiced">0</span></p>
+                        <button class="secondary-btn" onclick="updateProgress('days')">Log Day</button>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="dashboard-card">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="yoga-plan.html">Generate New Yoga & Meditation Plan</a></li>
+                        <li><a href="index.html">Login</a></li>
+                        <li><a href="index2.html">Sign Up</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 ZenFlow. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

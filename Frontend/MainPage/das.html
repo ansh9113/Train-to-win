@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Train to Win</title>
+    <link rel="stylesheet" href="das.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Train to Win</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">Home</a></li>
+                    <li><a href="../Sign-INUP/index.html">Login</a></li>
+                    <li><a href="../Sign-INUP/index2.html">Sign Up</a></li>
+                    <li><a href="logout.html" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="dashboard">
+            <h2>Welcome to Your Dashboard</h2>
+            <div class="dashboard-grid">
+                <!-- Profile Summary -->
+                <div class="dashboard-card">
+                    <h3>Profile Summary</h3>
+                    <p><strong>Username:</strong> <span id="username">User</span></p>
+                    <p><strong>Email:</strong> <span id="email">user@example.com</span></p>
+                    <p><strong>Joined:</strong> <span id="joinDate">April 02, 2025</span></p>
+                </div>
+
+                <!-- Saved Fitness Plan -->
+                <div class="dashboard-card">
+                    <h3>Your Saved Fitness Plan</h3>
+                    <div id="saved-plan">
+                        <p>No saved plan found. Generate a new plan <a href="fitness-plan.html">here</a>.</p>
+                    </div>
+                </div>
+
+                <!-- Progress Tracking -->
+                <div class="dashboard-card">
+                    <h3>Progress Tracking</h3>
+                    <div class="progress-item">
+                        <p><strong>Weight:</strong> <span id="current-weight">Not set</span></p>
+                        <button class="secondary-btn" onclick="updateProgress('weight')">Update Weight</button>
+                    </div>
+                    <div class="progress-item">
+                        <p><strong>Workouts Completed:</strong> <span id="workouts-completed">0</span></p>
+                        <button class="secondary-btn" onclick="updateProgress('workouts')">Log Workout</button>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="dashboard-card">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="product.html">Generate New Fitness Plan</a></li>
+                        <li><a href="../Sign-INUP/index.html">Login</a></li>
+                        <li><a href="../Sign-INUP/index2.html">Sign Up</a></li>
+                        <li><a href="mainpage.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Train to Win. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="das.js"></script>
+</body>
+</html>

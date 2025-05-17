@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9b59b6;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    background: #9b59b6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background: #71b7e6;
+}
+
+/* Workouts Section */
+.workouts {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.workouts h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.workouts p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.workout-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.workout-cards .card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.workout-cards .card:hover {
+    transform: translateY(-5px);
+}
+
+.workout-cards .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.workout-cards .card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.workout-cards .card p {
+    font-size: 14px;
+    color: #555;
+    padding: 0 15px 15px;
+}
+
+/* Memberships Section */
+.memberships {
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.memberships h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.memberships p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.membership-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.membership-cards .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.membership-cards .card:hover {
+    transform: translateY(-5px);
+}
+
+.membership-cards .card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.membership-cards .card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.membership-cards .card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #9b59b6;
+    margin-bottom: 20px;
+}
+
+.membership-cards .card button {
+    padding: 10px 20px;
+    background: #9b59b6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.membership-cards .card button:hover {
+    background: #71b7e6;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    color: #9b59b6;
+}
